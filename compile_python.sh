@@ -1,6 +1,5 @@
 full_path=$1$2;
 counter=0;
-mkdir ./tmp
 
 printf "array={" > $full_path".response";
 > $full_path".error";
@@ -16,7 +15,7 @@ do
   printf "    \""$counter"\" : "$opt"," >> ./tmp/opt;
   program_output=$(echo $ipt | python3 $full_path 2>> $full_path".error");
   printf "    \""$counter"\" : \""$program_output"\"," >> ./tmp/popt;
-  if [ -s $full_path".respose" ]
+  if [ -s $full_path".error" ]
   then
     printf "    \""$counter"\" : \"CE\"," >> $full_path".response";
     break;
@@ -37,4 +36,4 @@ printf "}," >> ./tmp/popt;
 
 cat ./tmp/* >> $full_path".response";
 printf "}=end" >> $full_path".response";
-rm -R ./tmp
+rm ./tmp/ipt ./tmp/opt ./tmp/popt
