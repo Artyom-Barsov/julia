@@ -1,0 +1,28 @@
+.main-panel {
+    margin: 15px;
+}
+
+.head-text {
+	font-size: 25px;
+}
+
+.code-panel {
+	float: left; 
+	margin-right: 20px;
+}
+
+.codearea {
+	width: 600px;
+}
+
+.send-div {
+	float: right; 
+	margin-right: 650px; 
+	margin-top: 10px;
+}
+
+.send-butt {
+    width: 250px; 
+    height: 100px; 
+    font-size: 20px;
+}
