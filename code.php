@@ -25,7 +25,7 @@ fclose($handle);
         <meta charset="utf-8">
         <title>Отправка программы</title>
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="css/main.css">
         <script defer src="check.js"></script>
     </head>
 

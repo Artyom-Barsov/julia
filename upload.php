@@ -48,7 +48,7 @@ if (file_exists($response)) {
     <head>
 		<title>Ответ</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css"></style>
-		<link rel="stylesheet" href="main.css"></style>
+		<link rel="stylesheet" href="css/main.css"></style>
 		<script src="var/www/html/js/bootstrap.min.js"></script>
     </head>
 
