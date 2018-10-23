@@ -13,9 +13,8 @@ do
   ((counter++))
   printf "    \""$counter"\" : "$ipt"," >> ./tmp/ipt;
   printf "    \""$counter"\" : "$opt"," >> ./tmp/opt;
-  nasm -f elf $full_path -o $full_path.o 2>> $full_path".error";
-  ld -melf_i386 $full_path.o -o $full_path.exec 2>> $full_path".error";
-  program_output=$(echo $ipt 0> ./$full_path".exec" 2>> $full_path".error");
+  g++ -static -lm -s -x c++ -O2 -std=c++11 -o $full_path.exec $full_path 2>> $full_path".error";
+  program_output=$(echo $ipt 0> ./$full_path.exec 2>> $full_path".error");
   printf "    \""$counter"\" : \""$program_output"\"," >> ./tmp/popt;
   if [ -s $full_path".error" ]
   then
@@ -38,4 +37,4 @@ printf "}," >> ./tmp/popt;
 
 cat ./tmp/* >> $full_path".response";
 printf "}=end" >> $full_path".response";
-rm ./tmp/ipt ./tmp/opt ./tmp/popt $full_path.exec $full_path.o
+rm -f ./tmp/ipt ./tmp/opt ./tmp/popt $full_path.exec $full_path.o
