@@ -1,0 +1,112 @@
+#name {
+    transition-duration: .1s;
+    width: 30%;
+    height: 80px;
+    margin-top: 10%;
+    margin-left: 35%;
+    text-align: center;
+    font-size: 27;
+    border-radius: 40px;
+    background-color: rgba(200, 200, 200, 0.2);
+    border-style: ridge;
+    overflow: hidden;
+}
+#name:focus {
+    background: white;
+}
+#name:hover {
+    transition-duration: .1s;
+    transform: scale(1.01);
+}
+
+#surname {
+    transition-duration: .1s;
+    width: 30%;
+    height: 80px;
+    margin-top: 50px;
+    margin-left: 35%;
+    text-align: center;
+    font-size: 27;
+    border-radius: 40px;
+    background-color: rgba(200, 200, 200, 0.2);
+    border-style: ridge;
+}
+#surname:focus {
+    background: white;
+}
+#surname:hover {
+    transition-duration: .1s;
+    transform: scale(1.01);
+}
+#grad {
+    transition-duration: .1s;
+    width: 10%;
+    height: 80px;
+    margin-left: 1%;
+    margin-top: 50px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 40;
+    background-color: rgba(200, 200, 200, 0.2);
+    border-style: ridge;
+    cursor: context-menu;
+}
+#grad:focus {
+    background: white;
+    cursor: pointer;
+}
+#grad:hover {
+    transition-duration: .1s;
+    transform: scale(1.01);
+}
+#letter {
+    transition-duration: .1s;
+    width: 10%;
+    height: 80px;
+    margin-left: 1%;
+    margin-top: 50px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 40;
+    background-color: rgba(200, 200, 200, 0.2);
+    border-style: ridge;
+    cursor: context-menu;
+}
+#letter:focus {
+    background: white;
+    cursor: pointer;
+}
+#letter:hover {
+    transition-duration: .1s;
+    transform: scale(1.01);
+}
+#txt1 {
+    transition-duration: .1s;
+    font-size: 37;
+    font-style: normal;
+    font-family: fantasy;
+    margin-left: 35%;
+    margin-top: 50px;
+}
+#login {
+    position: absolute;
+    transition-duration: .1s;
+    width: 20%;
+    height: 80px;
+    margin-top: 50px;
+    margin-left: 40%;
+    text-align: center;
+    font-size: 27;
+    border-radius: 20px;
+    background-color: rgba(200, 200, 200, 0.2);
+    border-style: ridge;
+    cursor: pointer;
+}
+#login:active {
+    background: white;
+    cursor: grabbing;
+}
+#login:hover {
+    transition-duration: .1s;
+    transform: scale(1.01);
+}
